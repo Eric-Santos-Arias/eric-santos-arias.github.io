@@ -1,3 +1,9 @@
 body{
     background-color: whitesmoke;
 }
+hr{
+    border-top: 5px;
+    border-top-style: dotted;
+    
+    width: 5%;
+}
