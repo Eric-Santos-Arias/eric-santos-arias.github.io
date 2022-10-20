@@ -18,7 +18,7 @@ body{
     right: 55px;
 }
 .menu{
-    border-top: 2px solid black;
+    border: 2px solid black;
     padding: 5px;
     border-radius: 5px;
     margin-right: 10px;
@@ -64,8 +64,8 @@ hr{
     font-family: monospace;
     border-right: 2px solid black;
     white-space: nowrap;
-    width: 15.5ch;
-    animation: typing 3s steps(14), blink .5s infinite step-end alternate;
+    width: 16.5ch;
+    animation: typing 3.5s steps(14), blink .5s infinite step-end alternate;
     overflow: hidden;
     margin: 0 auto;
     font-size: 12px;
