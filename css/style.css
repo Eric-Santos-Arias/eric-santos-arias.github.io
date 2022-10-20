@@ -13,9 +13,19 @@ body{
 }
 .content-menu{
     /* border: 1px solid black; */
-    position: fixed;
-    top: 35px;
-    right: 55px;
+   position: fixed;
+   width: 100%;
+   top: 30px;
+   text-align: center;
+}
+.css-html{
+    padding: 50px;
+    width: 300px;
+    height: 500px;
+    margin: 30px auto;
+    background-image: url("/eric-santos-arias.github.io/images/html.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .menu{
     border: 2px solid black;
@@ -36,7 +46,7 @@ body{
 }
 hr{
     border: 2px solid black;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 .iconos{
@@ -51,7 +61,8 @@ hr{
     margin: 200px auto 10px;
     border-radius: 5px;
 }
-    
+
+
 .title{
     font-size: 50px;
     font-family: 'Anton', cursive;
