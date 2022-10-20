@@ -23,7 +23,7 @@ body{
     width: 300px;
     height: 500px;
     margin: 30px auto;
-    background-image: url("/eric-santos-arias.github.io/images/html.png");
+    background-image: url('/images/html.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -33,6 +33,7 @@ body{
     border-radius: 5px;
     margin-right: 10px;
     font-family: monospace;
+    font-size: 9px;
 }
 .firstcontener{
     /* background: linear-gradient(to bottom, rgba(41, 41, 41, 0.15) 0%, rgba(15, 15, 15, 0.15) 100%), radial-gradient(at top center, rgba(61, 60, 60, 0.4) 0%, rgba(14, 13, 13, 0.4) 120%) #141414; */
