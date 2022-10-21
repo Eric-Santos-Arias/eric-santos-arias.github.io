@@ -21,11 +21,21 @@ body{
 .css-html{
     padding: 50px;
     width: 300px;
-    height: 100px;
     margin: 30px auto;
     background-image: url('/images/html.png');
     background-size: contain;
+    background-image: center;
     background-repeat: no-repeat;
+}
+.css{
+    padding: 50px;
+    width: 300px;
+    height: 125px;
+    margin: 30px auto 0px;
+
+    background-image: url('/images/css.png');
+    background-image: center;
+    background-size: cover;
 }
 .menu{
     border: 2px solid black;
