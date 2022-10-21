@@ -20,7 +20,8 @@ body{
 }
 .css-html{
     padding: 50px;
-    width: 300px;
+    width: 350px;
+    height: 150px;
     margin: 30px auto;
     background-image: url('/images/html.png');
     background-size: contain;
@@ -35,7 +36,7 @@ body{
 
     background-image: url('/images/css.png');
     background-image: center;
-    background-size: cover;
+    background-size: contain;
 }
 .divisiones{
     border-style: none;
