@@ -88,15 +88,19 @@ hr{
 
 
 .img-1{
-    position: relative;
-    top: 122px;
+    position: absolute;
+    top: 10px;
+    left: 36px;
+    
+}
+
+.img-2{
     animation-name: movementimage;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 5s;
-    animation-direction: reverse;
+    animation-direction: alternate-reverse;
 }
-
 
 .title{
     font-size: 50px;
