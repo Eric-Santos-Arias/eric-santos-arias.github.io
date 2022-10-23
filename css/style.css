@@ -66,6 +66,7 @@ body{
 }
 .faded{
     position: relative;
+  
     
 }
 hr{
@@ -88,18 +89,25 @@ hr{
 
 
 .img-1{
+    width:270px;
     position: absolute;
-    top: 10px;
-    left: 36px;
+    top: 30px;
+    left: 35px;
+    border: 1px solid grey;
+    border-radius: 3px;
     
 }
 
 .img-2{
+    width: 310px;
+    position: absolute;
+    left: 15px;
     animation-name: movementimage;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 5s;
     animation-direction: alternate-reverse;
+   
 }
 
 .title{
