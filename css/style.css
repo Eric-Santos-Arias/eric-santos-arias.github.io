@@ -37,6 +37,7 @@ body{
     background-image: url('/images/css.png');
     background-image: center;
     background-size: contain;
+ 
 }
 .divisiones{
     border-style: none;
@@ -63,10 +64,14 @@ body{
     top: 0;
     left: 0;
 }
+.faded{
+    position: relative;
+    
+}
 hr{
     border: 2px solid black;
     width: 90%;
-    margin: 0 auto;
+    margin: 30px  auto;
 }
 .iconos{
     width: 25px;
@@ -79,6 +84,17 @@ hr{
     background-color: black;
     margin: 200px auto 10px;
     border-radius: 5px;
+}
+
+
+.img-1{
+    position: relative;
+    top: 122px;
+    animation-name: movementimage;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: reverse;
 }
 
 
@@ -117,3 +133,18 @@ hr{
     text-align: center;
 
 }
+@keyframes movementimage {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  }
+  
