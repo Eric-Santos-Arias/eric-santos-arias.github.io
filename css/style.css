@@ -39,6 +39,9 @@ body{
     background-size: contain;
  
 }
+.centrar{
+    margin: 0 auto;
+}
 .divisiones{
     border-style: none;
     width: 15px;
@@ -65,10 +68,14 @@ body{
     left: 0;
 }
 .faded{
-    position: relative;
+    width: 300px;
+    height: 240px;
+    background-image: center; 
+    background-size: contain;
+}
   
     
-}
+
 hr{
     border: 2px solid black;
     width: 90%;
@@ -88,26 +95,26 @@ hr{
 }
 
 
-.img-1{
-    width:270px;
-    position: absolute;
-    top: 30px;
-    left: 35px;
-    border: 1px solid grey;
-    border-radius: 3px;
-    
-}
 
 .img-2{
-    width: 310px;
-    position: absolute;
-    left: 15px;
+    background-image: url(/images/newcodedjango.png);
+    background-position: center;
+    background-size: 280px;
+    background-repeat: no-repeat;
+   
+}
+.mostrar{
+    width: 300px;
+    height: 240px;
+    background-image: url(/images/codedjango.png);
+    background-position: center;
+    background-size: 320px;
+    background-repeat: no-repeat;
     animation-name: movementimage;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 5s;
     animation-direction: alternate-reverse;
-   
 }
 
 .title{
