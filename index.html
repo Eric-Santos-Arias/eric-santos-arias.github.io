@@ -1,57 +1,62 @@
-<!-- ariaseric@gmail.com-->
-<!-- Eric Santos Arias-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bowlby+One+SC&family=Jost:wght@300&family=Monoton&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <title>Eric Santos</title>
 </head>
+
 <body>
-    <header class="content-menu">
-        <span class="menu">Contact me</span><span class="menu">Skills</span><span class="menu">Projects</span>
-    </header>
-    <div class="firstcontener">
-            <h1 class="title">Eric Santos</h1>
-            <h2 class="subtitle">I'm a programer </h2>
-            <div class="icons">
-                <img class="iconos" src="images/icons8-angularjs-50.png" alt="">
-                <img class="iconos" src="images/icons8-css3-50.png" alt="">
-                <img class="iconos" src="images/icons8-django-32.png" alt="">
-                <img class="iconos" src="images/icons8-js-50.png" alt="">
-                <img class="iconos" src="images/icons8-python-50.png" alt="">
-                <img class="iconos" src="images/icons8-reaccionar-nativo-50.png" alt="">
-                <img class="iconos" src="images/icons8-sql-50.png" alt="">
-                <img class="iconos" src="" alt="">
-            </div>
-    </div>
-    <div class="secondcontener">
-        <hr>
-        <div class="css-html">
+    <div class="contenedor-principal">
+        <div class="cabecera">
+            <header class="titulo">
+                <h1>Eric Santos</h1>
+            </header>
         </div>
-        <p class="firstwords" style="font-family: Jost; font-size: 15px; margin-bottom: 30px;">i'm someone who loves to learn something new every single day.
-            <br>I enjoy coding and create new things.
-        </p>
-        <hr class="divisiones">
-        <div class="css">
-          
-        </div>
-        <p class="firstwords" style="font-family: Jost; font-size: 15px;">.
-            When you are creating a new page and you give a new appareance, it's so satisfying and You can see your outcomes.
+        <div class="contenido-computador">
+            <i>
+                  <pre id="texto">
 
-        </p>
-        <hr class="divisiones">
-        <div class="faded centrar img-2">
-            <div class="mostrar img-1 "></div>
-
+                  </pre>
+            </i>
         </div>
     </div>
-
-   
+    <script>
+        var texto = `def guardar(request):
+        if request.method == 'Post':
+            formulario = Formulario(request.POST, request.FILES)
+                if formulario.is_valid():
+                    formulario.save()
+                    return redirect('inicio')`;
+        var i = 0;
+        var speed = 50; // velocidad de escritura en milisegundos
+      
+        function typeWriter() {
+          if (i < texto.length) {
+            document.getElementById("texto").innerHTML += texto.charAt(i);
+            i++;
+          } else {
+            clearInterval(interval); // Limpiar el intervalo para que no se ejecute indefinidamente
+            setTimeout(startTypeWriter, 5000); // Esperar 30 segundos antes de comenzar de nuevo
+          }
+        }
+      
+        function startTypeWriter() {
+          i = 0;
+          document.getElementById("texto").innerHTML = ""; // Limpiar el contenido del div
+          interval = setInterval(typeWriter, speed); // Iniciar el efecto typing
+        }
+      
+        startTypeWriter();
+      </script>
+     
+     
+      
 </body>
 </html>
