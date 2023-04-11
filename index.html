@@ -1,62 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Eric Santos</title>
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
-    <title>Eric Santos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Press+Start+2P&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="contenedor-principal">
-        <div class="cabecera">
-            <header class="titulo">
-                <h1>Eric Santos</h1>
-            </header>
+    <div class="container">
+        <div class="c1 default">
+            <div class="cabecera">
+                <header class="titulo">
+                    <h1>Eric Santos</h1>
+                    <h2>developer in progress</h2>
+                </header>
+            </div>
         </div>
-        <div class="contenido-computador">
-            <i>
-                  <pre id="texto">
+        <div class="c2 default">
+            <ul class="references">
+                <li class="listItem faq">FAQ</li>
+                <li class="listItem about">About</li>
+                <li class="listItem contacto" id="abrir-ventana">Contaco</li>
+            </ul>
+        </div>
+        <div class="c3 default">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis consequatur consequuntur ratione officia, iure unde temporibus voluptatum officiis sunt repellendus ab? Velit minus quae beatae in voluptate nobis maiores quasi?
+            </p>
+        </div>
+        <div class="c4 default">
+            <div class="contenedor-button">
+                <a href="./Images/fondo.jpg" download="fondo.jpg">
+                  <button class="button"><strong>DESCARGAR CV</strong></button>
+                </a>
+            </div>
+        </div>
+        <div class="c5 default">
+            <div class="corchete1"></div>
+            <div class="contenido-computador">
+                <pre id="texto"></pre>
+            </div>
+            <div class="corchete2"></div>
+        </div>
+        <div class="c6 default">
 
-                  </pre>
-            </i>
+            <footer>GT &copy; 2023 (ER) </footer>
         </div>
     </div>
+
+
     <script>
-        var texto = `def guardar(request):
-        if request.method == 'Post':
-            formulario = Formulario(request.POST, request.FILES)
-                if formulario.is_valid():
-                    formulario.save()
-                    return redirect('inicio')`;
+    
+        var texto = `function typeMachine() {
+          if (i < texto.length) {
+            document.getElementById("texto")
+            .innerHTML += texto.charAt(i);
+            i++;
+          } else {
+            clearInterval(interval);
+            setTimeout(startTypeWriter, 7000)
+          }
+        };`;
         var i = 0;
-        var speed = 50; // velocidad de escritura en milisegundos
+        var speed = 100; 
       
         function typeWriter() {
           if (i < texto.length) {
             document.getElementById("texto").innerHTML += texto.charAt(i);
             i++;
           } else {
-            clearInterval(interval); // Limpiar el intervalo para que no se ejecute indefinidamente
-            setTimeout(startTypeWriter, 5000); // Esperar 30 segundos antes de comenzar de nuevo
+            clearInterval(interval); 
+            setTimeout(startTypeWriter, 7000);
           }
         }
       
         function startTypeWriter() {
           i = 0;
-          document.getElementById("texto").innerHTML = ""; // Limpiar el contenido del div
-          interval = setInterval(typeWriter, speed); // Iniciar el efecto typing
+          document.getElementById("texto").innerHTML = ""; 
+          interval = setInterval(typeWriter, speed);
         }
-      
+
         startTypeWriter();
       </script>
-     
-     
-      
 </body>
 </html>

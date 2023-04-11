@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #272727;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+button{
+    width: 200px;
+    height: 100px;
+    background-color: #28ba98 ;
+    border-style: none;
+    font-size: 25px;
+    color: #272727 ;
+    font-family: 'Signika Negative', sans-serif;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+    }
+.cabecera{
+    width: 25%;
+    height: 350px;
+    border: 20px solid #28ba98;
+    position: absolute;
+    left: 50px;
+    border-top: none;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 70px ;
+    padding: 40px;
+    line-height: 100px;
+    border-bottom: 50px  solid whitesmoke;
+}
+.contenedor-principal{
+    width: 100%;
+    height: 95vh;
+    padding: 0.1px;
+    position: relative;
+}
+
+.contenedor-button{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+    bottom: 100px;
+    border-bottom: 5px solid white;
+    
+
+}
+.datos-personales{
+    width: 60%;
+    height: 200px; 
+    border: 10px solid #ffda06;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    border-right: none;
+    padding: 10px;
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+h3{
+    width: 150px;
+    margin: 30px auto;
+    color: #272727;
+    text-decoration: none;
+    border-bottom: 6px solid #272727;
+    text-align: center;
+    
+}
+.corchete{
+    font-size: 160px;
+    position: relative;
+}
+
+.corchete-apertura{
+    right: 30px;
+    top: 23px;
+}
+.corchete-cierre{
+    left: 800px;
+    top: 23px;
+    transform: rotate(180deg);
+}
+
+.contenido-computador{
+    width: 800px;
+    height: 250px;
+    position: absolute;
+    bottom: 15px;
+    right: 180px;
+    font-size: 17px;
+    font-family: monospace;
+    letter-spacing: 2px;
+    /* border: 1px solid whitesmoke; */
+}
+#texto{
+    color: rgb(255, 253, 253);
+}
+.llaves{
+    width: 1000px;
+    height: 200px;
+    position: absolute;
+    color:#ffda06;
+    right: 20px;
+    bottom: 100px;
+
+}
+.item{
+    list-style: none;
+    flex-wrap: wrap;
+    width: 70px;
+    height: 50px;
+    border-bottom: 6px solid #28ba98;
+    margin-right: 50px;
+    line-height: 60px;
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.menu{
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    text-align: center;
+}
+button:hover{
+    width: 210px;
+
+}
+.datos-personales:hover{
+    font-size: 16.5px;
+}
