@@ -22,20 +22,31 @@
         </div>
         <div class="c2 default">
             <ul class="references">
-                <li class="listItem faq">FAQ</li>
+            
                 <li class="listItem about">About</li>
-                <li class="listItem contacto" id="abrir-ventana">Contaco</li>
             </ul>
         </div>
         <div class="c3 default">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis consequatur consequuntur ratione officia, iure unde temporibus voluptatum officiis sunt repellendus ab? Velit minus quae beatae in voluptate nobis maiores quasi?
-            </p>
+            <p>Hello! I am a programmer in the process of learning and seeking opportunities to put my skills and knowledge into practice. 
+              I am passionate about the world of technology and software development, 
+              and I am constantly seeking to learn new things and improve my skills.</p>
+          
         </div>
         <div class="c4 default">
             <div class="contenedor-button">
-                <a href="./Images/fondo.jpg" download="fondo.jpg">
-                  <button class="button"><strong>DESCARGAR CV</strong></button>
-                </a>
+              <div class="menuplegable">
+                    <h3>Contact me</h3>                  
+                    <h4>Email</h4>
+                    <hp>ericmiu07@gamail.com</p>
+                    <h4>Phone Number</h4>
+                    <p>+(502)48348698</p>
+                    <h4>Location</h4>
+                    <p>Guatemala City</p>
+
+                    <a href="./Images/fondo.jpg" download="fondo.jpg">
+                      <button class="button"><strong>Download CV</strong></button>
+                    </a>
+              </div>
             </div>
         </div>
         <div class="c5 default">
@@ -47,19 +58,20 @@
         </div>
         <div class="c6 default">
 
-            <footer>GT &copy; 2023 (ER) </footer>
+            <footer>Guatemala &copy; 2023 (ER) </footer>
         </div>
     </div>
 
 
     <script>
     
-        var texto = `function typeMachine() {
-          if (i < texto.length) {
-            document.getElementById("texto")
-            .innerHTML += texto.charAt(i);
-            i++;
-          } else {
+        var texto = `
+    function typeMachine() {
+      if (i < texto.length) {
+        document.getElementById("texto")
+        .innerHTML += texto.charAt(i);
+        i++;} 
+        else {
             clearInterval(interval);
             setTimeout(startTypeWriter, 7000)
           }
