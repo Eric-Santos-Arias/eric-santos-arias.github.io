@@ -1,4 +1,4 @@
-@media(min-width: 801px) {
+@media(min-width: 901px) {
 
     * {
         margin: 0;
@@ -8,19 +8,17 @@
 
     body {
         background-image: url(/Images/dot-grid.png);
+        font-family: monospace;
     }
 
     button {
-        width: 90%;
-        height: 90%;
-        margin: 0 auto;
-        background-color: #28ba98;
-        border-style: none;
-        color: #124559;
-        font-size: 1vw;
+        background-color: white;
         font-family: 'Black Ops One', cursive;
-
-
+        padding: 5px;
+        cursor: pointer;
+        color:#124559;
+        letter-spacing: 2px;
+    
     }
 
     .container {
@@ -33,14 +31,10 @@
         margin: 0 auto;
     }
 
-    .default {
-        border: 1px solid black;
-    }
 
     .cabecera {
         width: 95%;
         height: 95%px;
-        border: 20px solid #28ba98;
         border-top: none;
         color: #124559;
         font-size: 2.7vw;
@@ -64,14 +58,7 @@
         font-weight: 900;
     }
 
-    .contenedor-button {
-        width: 25%;
-        height: 20%;
-        border-bottom: 5px solid #28ba98;
-        font-size: 1vw;
 
-
-    }
 
     .corchete1 {
         width: 70px;
@@ -120,9 +107,7 @@
     .c5 {
         grid-column: 2/4;
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 40px;
+        justify-content: space-around;
     }
 
     .c6 {
@@ -132,40 +117,44 @@
 
     }
 
-    .default {
-        border: 1px solid black;
-    }
-
     .references {
         text-align: center;
-        list-style: none;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row-reverse;
+        width: 40%;
+        height: 100px;
+        float: right;
+        margin-right: 30px;
         margin-top: 10px;
-        margin-right: 10px;
+        clip-path: inset(5% 40% 60% 40%);
+        transition: all .4s;
+        background-color: #124559;
+        color: white;
+
     }
 
-    .references>li {
-        width: 15%;
-        height: 50px;
-        border-bottom: 3px solid #28ba98;
-        margin-left: 20px;
-        line-height: 50px;
+    .references>div {
+        width: 20%;
+        height: 30px;
+        margin: 10px auto;
         font-size: 1vw;
-        float: right;
         padding: 5px;
         font-family: 'Black Ops One', cursive;
+    }
+    .references p{
+        font-size: 0.8vw;
     }
 
     #texto {
         font-family: 'Black Ops One', cursive;
-        letter-spacing: 4px;
+        letter-spacing: 2px;
+        width: 400px;
+
+    }
+    .references:hover{
+        clip-path: inset(0% 0% 0% 0%);
 
     }
 
-    .references li:hover {
-        color: #28ba98;
+    .references div:hover {
         cursor: pointer;
 
 
@@ -175,9 +164,55 @@
     footer {
         color: #124559;
     }
+    .menuplegable {
+        min-width: 75%;
+        min-height: 80%;
+        border: 5px solid #124559;
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+        font-family: monospace;
+        clip-path: inset(3% 15% 77% 15%);
+        border-radius: 8px;
+        transition: all .5s;
+
+        
+    }
+    .menuplegable:hover{
+        clip-path: inset(0 0 0 0);
+
+    }
+    h3{
+        font-family: 'Black Ops One', cursive;
+        border: 2px solid black;
+        width: 205px;
+        min-width: 204px;
+        height: 45px;
+        min-height: 44px;
+        font-size: 1.5vw;
+        margin: 10px auto;
+
+    }
+    h3:hover{
+        cursor: pointer;
+        border: none;
+    }
+    .button:hover{
+        background-color: #124559;
+        color: white;
+        letter-spacing: 5px;
+        font-family: monospace;
+    }
 }
 
-@media (max-width: 800px) {
+
+
+
+/*----------------------------------------*/
+
+
+
+@media (max-width: 900px) {
     .container {
         font-family: monospace;
         background-image: url(/Images/dot-grid.png);
@@ -275,6 +310,7 @@
         font-size: 12px;
         padding: 3px;
         color: black;
+        cursor: pointer;
 
 
 
